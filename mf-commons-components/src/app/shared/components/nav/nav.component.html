@@ -1,0 +1,21 @@
+<!-- <nav *ngIf="menuItems && menuItems.length > 0">
+  <p>Menu Items: {{ menuItems | json }}</p>
+  <a *ngFor="let menu of menuItems" [routerLink]="menu.url">{{ menu.name }}</a>
+</nav> -->
+
+<!-- <nav><a routerLink="/login">Login</a><a routerLink="/dashboard">Dashboard</a></nav> -->
+<nav>
+  <a *ngFor="let menu of menuItems" [routerLink]="menu.url">{{menu.name}}</a>
+
+</nav>
+
+<!-- <div *ngIf="menuItems && menuItems.length > 0">
+  <div >hola</div>
+</div> -->
+
+<!-- <nav *ngIf="menuItems && menuItems.length > 0">
+  <p>Menu Items: {{ menuItems | json }}</p>
+  <ng-container *ngFor="let menu of menuItems">
+    <a [routerLink]="menu.url">{{ menu.name }}</a>
+  </ng-container>
+</nav> -->
